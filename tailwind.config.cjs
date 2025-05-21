@@ -20,6 +20,10 @@ module.exports = {
 			},
 			colors: {
 				black: "#131313",
+				themePrimary: "#FFFFFF", // Tu color primario (blanco)
+				themeSecondary: "#2f9aaa", // Tu color secundario
+				accentTeal: "#84bdb1", // Tu primer acento
+				accentGold: "#D4AF37", // Tu acento dorado
 				primary: {
 					50: "#f3ffe4",
 					100: "#e4ffc5",

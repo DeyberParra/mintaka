@@ -20,15 +20,15 @@ const lang = getLangFromUrl(Astro.url);
 const shareImage = new URL("/images/meta/mintaka_share.gif", Astro.site).toString();
 
 const defaultSeo: AstroSeoProps = {
-	title: "Web Agency Leading in Performant Web Design Solutions - Mintaka Studio",
+	title: "Clinikit",
 	description:
-		"Mintaka Studio excels in creating fast, user-friendly websites with a focus on aesthetic design and SEO optimization, ensuring a standout online presence",
-	canonical: "https://mintaka.co",
+		"Medicina estetica profesional",
+	canonical: "https://clinikit.com",
 	openGraph: {
-		url: "https://mintaka.co",
-		title: "Web Agency Leading in Performant Web Design Solutions - Mintaka Studio",
+		url: "https://clinikit.com",
+		title: "Clinikit Medicina Estetica",
 		description:
-			"Mintaka Studio excels in creating fast, user-friendly websites with a focus on aesthetic design and SEO optimization, ensuring a standout online presence",
+			"Medicina estetica profesional",
 		images: [
 			{
 				url: shareImage,
@@ -45,17 +45,17 @@ const defaultSeo: AstroSeoProps = {
 				type: "image/gif",
 			},
 		],
-		site_name: "Mintaka",
+		site_name: "Clinikit",
 	},
 	twitter: {
-		handle: "@mintakastudio",
-		site: "@mintakastudio",
+		handle: "@clinikit",
+		site: "@clinikit",
 		cardType: "summary_large_image",
 	},
 	additionalMetaTags: [
 		{
-			name: "publisher",
-			content: "Mintaka Studio",
+			name: "Clinikit",
+			content: "Servicios de medicina estetica profesional",
 		},
 	],
 };
@@ -66,7 +66,7 @@ const seo = {
 };
 
 function cursorFollowerActive() {
-	const paths = ["", "/", "/it/", "/it"];
+	const paths = ["", "/", "/en/", "/en"];
 	return paths.includes(pathname);
 }
 ---
@@ -77,7 +77,6 @@ function cursorFollowerActive() {
 		<AstroSeo {...seo} />
 	</head>
 	<body class="bg-slate-50">
-		<BackgroundTexture />
 		<Navigation />
 		{cursorFollowerActive() && <BlobCursorFollower />}
 		<slot />

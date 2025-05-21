@@ -13,10 +13,10 @@ export default defineConfig({
 			},
 		},
 	},
-	site: "https://mintaka.co",
+	site: "https://clinikit.com",
 	i18n: {
-		defaultLocale: "en",
-		locales: ["en", "it"],
+		defaultLocale: "es",
+		locales: ["es", "en"],
 	},
 	markdown: {
 		drafts: true,
